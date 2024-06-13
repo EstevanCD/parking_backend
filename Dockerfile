@@ -30,7 +30,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copiar el archivo JAR desde la etapa anterior del build al nuevo contenedor
-COPY --from=0 /app/target/parking_backend-0.0.1-SNAPSHOT.jar ./app.jar
+COPY --from=0 /app/target/parking_backend-0.0.1-SNAPSHOT.jar.original ./app.jar
 
 # Exponer el puerto en el que se ejecuta la aplicación
 EXPOSE 8080
