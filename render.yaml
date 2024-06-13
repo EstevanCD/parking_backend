@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: parking_backend
-    env: docker
-    dockerfilePath: ./Dockerfile
-    buildCommand: ./mvnw clean install
-    startCommand: java -jar target/parking_backend-0.0.1-SNAPSHOT.jar
